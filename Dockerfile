@@ -33,6 +33,7 @@ RUN apk update \
     && pip install --no-cache-dir matplotlib \
     && pip install --no-cache-dir scipy \
     && pip install --no-cache-dir gensim \
+    && pip install --no-cache-dir sklearn \
     && apk add --virtual scipy-runtime \
         freetype libgfortran libgcc libpng  libstdc++ musl openblas tcl tk \
     && rm -rf /var/cache/apk/*
