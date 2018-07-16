@@ -6,4 +6,6 @@ services:
 before_install:
   - docker build -t janh/alpine-ml-python3.6 .
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+
+script:
   - docker push janh/alpine-ml-python3.6
